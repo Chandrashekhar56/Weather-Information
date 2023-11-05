@@ -9,8 +9,6 @@
                 if(vall!=="")
                 {
                     getWeather(vall);
-                    document.getElementsByClassName('weather-details')[0].style.backgroundColor = "powderblue";
-                    document.getElementsByClassName('weather-details')[0].style.textAlign = "center";
                 }
             });
 
@@ -43,6 +41,8 @@
             fetch(url)
                 .then((response) => response.json())
                 .then((data) => {
+                    document.getElementsByClassName('weather-details')[0].style.backgroundColor = "powderblue";
+                    document.getElementsByClassName('weather-details')[0].style.textAlign = "center";
                     $("#cityName").text(data.name);
                     $("#temperature").text(`${(data.main.temp - 273.15).toFixed(2)}°C`);
                     $("#description").text(data.weather[0].description);
