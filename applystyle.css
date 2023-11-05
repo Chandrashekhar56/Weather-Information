@@ -1,0 +1,77 @@
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .search-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type="text"],
+        .search-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-container button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-container button:hover {
+            background-color: #004185;
+        }
+
+        .forecast {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+
+        .forecast-card {
+            background-color:#fdd4fc;
+            border-radius: 10px;
+            box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 7px;
+            padding: 15px;
+        }
+
+        .forecast-card h3 {
+            font-size: 18px;
+        }
+
+        .forecast-card img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+</style>

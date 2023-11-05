@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Weather Page</title>
+    <link rel="stylesheet" type="text/css" href="applystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="row bg-dark text-white p-3">
+            <h1>Welcome to See Weather Information</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="row">
+            <!-- Aside (Search Container) -->
+            <aside class="search-container col-md-4" style="border-radius: 0%;">
+                <h1>Weather Information</h1>
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <br><br>
+                <button id="searchButton">Search</button>
+                <br><br>
+                <p style="text-align: center;">------------------------or------------------------</p>
+                <button id="currentLocationButton">Get Current Location</button>
+            </aside>
+
+            <!-- Main Weather Content -->
+            <div class="col-md-8 content bg-white p-3" style="border-left: 5px solid #CDC6C6;">
+                <div class="weather-details">
+                    <h2 id="cityName"></h2>
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                    <img id="icon">
+                </div>
+                <div class="forecast">
+                    <!-- Forecast data will be displayed here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="row footer">
+            <p>copyright &copy; 2023 Weather information</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="applyjs.js"></script>
+
+</body>
+</html>
